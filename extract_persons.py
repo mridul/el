@@ -1,11 +1,13 @@
 
-PERSON_TYPE_PATH = './distinct_person_types.txt'
+PERSON_TYPE_PATH = './data/distinct_person_types.txt'
 
 def get_person_types():
+    lines = []
     with open(PERSON_TYPE_PATH) as f:
-        lines = f.readlines()
+        for line in f:
+            lines.append(line.strip())
 
     return lines
 
 if __name__ == '__main__':
-    print(get_person_types())
+    types_person = get_person_types()
