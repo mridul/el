@@ -1,6 +1,10 @@
 import ipdb
+import logging
+import os.path
 import string
 
+
+logger = logging.getLogger(__name__)
 
 INSTANCE_TYPES_TRANSITIVE_PATH = './data/instance_types_transitive_en.ttl'
 PERSON_TYPE_PATH = './data/distinct_person_types.txt'
