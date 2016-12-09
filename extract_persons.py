@@ -94,9 +94,9 @@ def write_person_aliases(persons, anchor_text_file, output_file):
 if __name__ == '__main__':
     types_person = get_person_types()
     instance_type_list, instance_set = get_instance_types(types_person)
-    # instance_type_list_delimited = [' '.join(entry) for entry in instance_type_list]
+    instance_type_list_delimited = [' '.join(entry) for entry in instance_type_list]
 
-    # write_iterable_to_file(instance_set, OUTPUT_PERSONS_PATH)
-    # write_iterable_to_file(instance_type_list_delimited, OUTPUT_INSTANCE_TYPE_PATH)
+    write_iterable_to_file(instance_set, OUTPUT_PERSONS_PATH)
+    write_iterable_to_file(instance_type_list_delimited, OUTPUT_INSTANCE_TYPE_PATH)
 
-    # write_person_aliases(instance_set, ANCHOR_TEXTS_PATH, OUTPUT_PERSONS_ANCHOR_TEXT)
+    write_person_aliases(instance_set, ANCHOR_TEXTS_PATH, OUTPUT_PERSONS_ANCHOR_TEXT)
